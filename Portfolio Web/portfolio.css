@@ -1,0 +1,482 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(montserrat/Montserrat-Medium.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+.navbar{
+    width: 100%;
+    border-bottom: 2px solid #000000  ;
+    font-size: 1rem;
+}
+
+.nav-content{
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-content h3{
+    margin-right: auto;
+}
+
+.nav-item{
+    margin-right: 50px;
+    font-size: larger;
+}   
+
+.nav-item:hover a{
+    background-color: #D4C9BE;
+    border-radius: 5px;
+    color: white;
+}
+
+.about{
+    display: grid;
+    grid-template-areas: "about-img about-content";
+    grid-template-columns: 40% 1fr;
+    border-bottom: 2px solid black;
+   padding-bottom: 20px;
+}
+
+
+.about-img{
+    grid-area: about-img;
+    width: 100%;
+    margin-left: 9px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.about-img img{
+    display: flex;
+    object-fit: cover;
+    width: 95%;
+    height: 650px;
+    border-radius: 10px;
+}
+
+.overlay{
+    display: flex;
+    position: absolute;
+    flex-direction: column-reverse;
+    width: 95%;
+    height: 650px;
+    background-color: #00000059;
+    border-radius: 10px;
+}
+
+.overlay h2{
+   color: white;
+   margin-bottom: 10px;
+   margin-left: 10px;
+    font-style: italic;
+    font-size: 4rem;
+}
+
+.overlay p{
+   color: white;
+   margin-bottom: 10px;
+   margin-left: 10px;
+}
+
+.about-content{
+    grid-area: about-content;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+
+
+.greetings-section{
+ 
+    margin-top: 20px;
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.greetings-section p {
+    margin-top: 15px;
+}
+
+.greetings-additonal{
+    display: flex;
+}
+
+.about-description{
+    border-bottom: 2px solid black;
+}
+
+.contact-section{
+    width: 100%;
+}
+
+.contact-section h1{
+    margin-top: 20px;
+}
+
+.contact-list{
+    display: flex;
+    width: ;
+}
+
+.contact-content{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+.contact-content img{
+    width: 70px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.contact-content p {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-top: 2px solid black ;
+    
+}
+
+.contact-content.insta:hover {
+    background: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045
+    );
+    color: white;
+    border: white;
+}
+
+.contact-content.insta:hover p{
+    border-top: 2px solid white;
+}
+
+.contact-content.linkedin:hover {
+    background-color: #004182;
+    color: white;
+    border: white;
+}
+.contact-content.linkedin:hover p{
+    border-top: 2px solid white;
+}
+
+.contact-content.gmail:hover {
+    background: linear-gradient(
+      to right,
+      #3e65cf 0%,
+      #3e65cf 20%,
+      #BB001B 20%,
+      #BB001B 40%,
+      #EA4335 40%,
+      #EA4335 60%,
+      #FBBC05 60%,
+      #FBBC05 80%,
+      #34A853 80%,
+      #34A853 100%
+    );
+    color: white;
+    border: white;
+  }
+  
+.contact-content.gmail:hover p{
+    border-top: 2px solid white;
+    
+}
+
+.resume{
+    margin-top: 20px;
+    margin-left: 9px;
+    display: grid;
+    grid-template-areas: "experience education";
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    
+}
+
+#resume-header{
+    margin-top: 20px;
+    margin-left: 9px;
+}
+
+.experience{
+    grid-area: experience;
+}
+
+.experience-list{
+    border: 1px solid black;
+     border-radius: 10px;
+     margin-top: 15px;
+     margin-right: 150px;
+     padding: 15px;
+}
+
+.jobdesc{
+    color: #00000080;
+}
+
+.jobplace{
+    font-weight: bolder;
+}
+
+.experience-list:hover{
+    background-color: #0839FF;
+    color: white;
+  
+}
+
+.experience-list:hover .jobdesc{
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.education-list{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 5px;
+}
+
+.education-list:hover{
+    background-color: #0839FF;
+    color: white;
+}
+
+.education-list-img{
+    margin-right: 20px;
+}
+.education-list img{
+    width: 200px;
+}
+
+.education-list-content{
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+
+#project-header{
+    margin-left: 9px;
+    margin-top: 20px;
+}
+
+.project-list{
+    margin-top: 20px;
+    margin-left: 9px;
+    display: grid;
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-areas: "project-photo project-description project-files";
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project-photo{
+    grid-area: project-photo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.project-description{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project-description p {
+    margin-top: 20px;
+}
+
+.project-photo img{
+    width: 200px;
+    
+}
+
+.project-files{
+    grid-area: project-files;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.project-prototype{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#bossvariasi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+
+    .nav-content {
+        flex-wrap: wrap; /* Agar tidak overflow tapi tetap sejajar */
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .nav-item {
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+
+    .about {
+        grid-template-areas: 
+            "about-img"
+            "about-content";
+        grid-template-columns: 1fr;
+    }
+
+    .about-img {
+        margin: 0 10px;
+    }
+
+    .about-img img,
+    .overlay {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .overlay h2 {
+        font-size: 2.5rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        margin: 20px;
+    }
+
+    .greetings-additonal {
+        flex-direction: column;
+    }
+
+    .resume {
+        grid-template-areas: 
+            "experience"
+            "education";
+        grid-template-columns: 1fr;
+    }
+
+    .experience-list {
+        margin-right: 0;
+    }
+
+    .education-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education-list img {
+        width: 100%;
+        height: auto;
+    }
+
+    .education-list-content {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .project-list {
+        grid-template-areas: 
+            "project-photo"
+            "project-description"
+            "project-files";
+        grid-template-columns: 1fr;
+    }
+
+    .project-photo img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .project-photo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-description {
+        border-left: none;
+        border-right: none;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+
+    .contact-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
