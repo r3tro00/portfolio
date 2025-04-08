@@ -353,7 +353,10 @@ li a{
 
 
 @media screen and (max-width: 768px) {
-    
+    body{
+        overflow-x: hidden;
+    }
+
     html {
         font-size: 90%;
     }
@@ -473,6 +476,11 @@ li a{
 
     }
 
+    #bossdesktop{
+        width: 200px;
+        height: 150px;
+    }
+
     .contact-list {
         flex-direction: column;
     }
@@ -481,6 +489,8 @@ li a{
         width: 100%;
         margin-bottom: 20px;
     }
+
+
 }
 
 
